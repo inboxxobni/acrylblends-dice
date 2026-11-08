@@ -1,0 +1,38 @@
+{
+  "name": "acrylblends-dice",
+  "version": "0.1.0",
+  "description": "A test plugin: a dice page at GET /dice. Made to test the collective app (ACRYL Blends).",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "keywords": [
+    "cordis",
+    "acrylblends"
+  ],
+  "acryl": {
+    "schemaVersion": 1,
+    "artifacts": {
+      "plugins": [
+        "./index.ts"
+      ]
+    },
+    "requires": {
+      "host": [
+        "router"
+      ]
+    },
+    "provides": {
+      "host": []
+    },
+    "slots": {
+      "offers": [],
+      "fills": []
+    }
+  }
+}
